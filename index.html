@@ -57,7 +57,7 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero_title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button_primary">Заказать услугу</button>
+          <button type="button" class="button_primary" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -117,13 +117,22 @@
         <h2 class="work">Чем мы занимаемся</h2>
         <ul class="work-list list">
           <li class="work-item">
-            <img src="img/index/section_3/section3-1.jpg" alt="Планирование работы" width="370" height="294" />
+            <div class="work-tumb">
+              <img src="img/index/section_3/section3-1.jpg" alt="Планирование работы" width="370" height="294" />
+              <p class="work-tumb-text">Десктопные приложения</p>
+            </div>
+            </li>
+          <li class="work-item">
+            <div class="work-tumb">
+              <img src="img/index/section_3/section3-2.jpg" alt="Работа с уведомлениями" width="370" height="294" />
+              <p class="work-tumb-text">Мобильные приложения</p>
+            </div>
           </li>
           <li class="work-item">
-            <img src="img/index/section_3/section3-2.jpg" alt="Работа с уведомлениями" width="370" height="294" />
-          </li>
-          <li class="work-item">
-            <img src="img/index/section_3/section3-3.jpg" alt="Оптимизация рабочего графика" width="370" height="294" />
+            <div class="work-tumb">
+              <img src="img/index/section_3/section3-3.jpg" alt="Оптимизация рабочего графика" width="370" height="294" />
+              <p class="work-tumb-text">Дизайнерские решения</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -412,5 +421,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-back" width="18" height="18">
+            <use href="img/icons.svg#icon-close-black">
+            </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
